@@ -1,0 +1,5 @@
+# Explaination:
+
+My main use of pointers is when recieving user input via std::cin. Rather than use a c++ std::string (I was unsure whether this was allowed), I instead allocated an array of char* with an arbitrary buffer of 35 (googled reasonable text field limits). Otherwise, I handled exceptions as expected by the pytest. In my addStudent function, a check of size < capacity is made, and if it is false, then it throws an exception of "List full.", with regard to the averageGPA function, it does the same, checking initially whether size is 0, and if so, throwing a "No students." error. Regarding casting, since the array of GPAs was doubles, I did not need to cast it in the averageGPA function, but rather, once recieving the return value of a double, then casting it to an int as the assignment suggests. Otherwise, most choices I made were in an attempt to be similar to the temperature demo we performed in class. I also made sure to deallocate all of the char* arrays I made by iterating over the names array and delete[]-ing each of the allocated names.
+
+- Jimmy Padilla
