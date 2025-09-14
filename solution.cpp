@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <cstring>   // for strlen, strcpy
 
 int NAME_BUFFER = 35; // a good length for a name
@@ -73,7 +74,6 @@ int main(int argc, char* argv[]) {
                     addStudent(name, gpa, names, gpas, size, capacity);
                 } catch (const char* msg) {
                     std::cout << msg << std::endl;
-                    return 1;
                 }
                 break;
             }
@@ -106,7 +106,6 @@ int main(int argc, char* argv[]) {
                     std::cout << "Average GPA: " << static_cast<int>(average) << std::endl;
                 } catch (const char* msg) {
                     std::cout <<  msg << std::endl;
-                    return 1;
                 }
                 break;
             }
